@@ -1,6 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
+	padding-bottom: 0;
 }
 h1 {
     font-size: 48px;
@@ -69,7 +70,7 @@ li.nav-button {
 .navbar-brand img {
 	width: 74px;
 	float: left;
-	margin: -10px 7px 0 -12px;
+	margin: -7px 7px 2px -12px;
 }
 .navbar-brand p {
 	float: left;
@@ -188,6 +189,8 @@ li.nav-button {
 }
 #aboutMe, #myPromise  {
 	color: #37373e;
+}
+#myPromise {
 	text-align: center;
 }
 
@@ -212,9 +215,9 @@ li.nav-button {
 .quote {
 	font-family: "Lora", "sans-serif";
 	font-style: italic;
-	width: 62%;
-    margin: 7px auto 0 auto;
-    font-size: 11px;
+	width: 70%;
+    margin: 7px auto 13px auto;
+    font-size: 12px;
     line-height: 14px;
 }
 .row.aboutMe-dek {
@@ -222,7 +225,7 @@ li.nav-button {
 	padding: 10px 30px;
 }
 .featurette-image {
-    width: 70%;
+    width: 40%;
 }
 #myPromise {
 	background: #F2F2F2;
@@ -236,7 +239,24 @@ li.nav-button {
 .benefits {
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
+.hed, .promise-dek {
+    display: table;
+    width: 100%
+}
+.hed {
+    height: 50px;
+}
+.promise-dek {
+	height: 50px;
+	margin-top: 6px;
+}
+.hed h3, .promise-dek p {
+    vertical-align: bottom;
+    display: table-cell;
+}
+
 .benefit-dek a {
 	color: #c00;
 }
@@ -246,9 +266,6 @@ li.nav-button {
 }
 .benefits img {
 	width: 30%
-}
-.benefits {
-	text-align: center;
 }
 .benefits hr {
 	width: 80%;
@@ -317,6 +334,9 @@ input[type="submit"] {
 	margin-top: 13px;
 	padding: 10px 0;	
 }
+.contact-dek {
+	margin-top: 8px;
+}
 .contact-dek, #certs {
 	text-align: left;
 }
@@ -335,7 +355,7 @@ input[type="submit"] {
 #certs li {
 	list-style: none;
     line-height: 18px;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing:1px;
 }
 .form-error {
@@ -424,7 +444,7 @@ input[type="submit"] {
 	    font-size: 72px;
 	}
 	.featurette-image {
-	    width: 45%;
+	    width: 65%;
 	}
 	.benefits hr {
 		display: none;
@@ -488,7 +508,6 @@ input[type="submit"] {
 		padding-bottom: 40px;
 	}
 	.aboutMe-dek {
-		text-align: left;
 		margin-bottom: 0px;
 	}
 	.myTeam-dek {
@@ -497,9 +516,6 @@ input[type="submit"] {
 	}
 	#contact .container {
 		text-align: left;
-	}
-	.contact-dek p {
-	  /*  font-size: 22px; */
 	}
 	.g-recaptcha {
 	    transform: scale(.9);
@@ -568,12 +584,21 @@ input[type="submit"] {
      	margin-top: -11px;
      	margin-bottom: 20px;
 	}
+	.aboutMe-dek {
+		margin-top: 25px;
+		margin-left: 20px;
+	}
+	.quote {
+		width: 53%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 	.col-md-pull-6 {
 	    margin-left: 30px;
 	    margin-right: -30px;
 	}
 	.featurette-image {
-		width: 60%;
+		width: 50%; 
 	}
 	#myPromise, #contact {
 		padding-top: 30px;
@@ -582,6 +607,9 @@ input[type="submit"] {
 	#myPromise .dek {
 		margin-top: 44px;
     	margin-bottom: 30px;
+	}
+	.promise-dek {
+		margin-top: 14px;
 	}
 	#contact h2 {
 		margin-bottom: 50px;
