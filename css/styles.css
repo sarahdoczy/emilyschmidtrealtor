@@ -1,3 +1,7 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
@@ -143,7 +147,7 @@ li.nav-button {
 }
 #messageSent {
 	position: relative;
-    top: -56px;
+    top: -45px;
     color: #282828;
     left: 2px;
     font-style: italic;
@@ -217,8 +221,9 @@ li.nav-button {
 	font-style: italic;
 	width: 70%;
     margin: 7px auto 13px auto;
-    font-size: 12px;
+    font-size: 12px !important;
     line-height: 14px;
+    text-align: center;
 }
 .row.aboutMe-dek {
 	margin-bottom: 22px;
@@ -624,4 +629,17 @@ input[type="submit"] {
 	.home1, .home2, .home3 {
 		background-position: 0 45%;
 	}
+	#aboutMe h3 {
+	    font-size: 24px;
+	}
+	#aboutMe p {
+	    font-size: 18px;
+	}
+
+	.featurette-image {
+	    width: 48%;
+	}
 }
+
+
+

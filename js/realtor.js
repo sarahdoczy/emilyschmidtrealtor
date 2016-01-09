@@ -35,10 +35,13 @@ $(function(){
         checkWindowSize();
     });
     checkWindowSize();
-    $(function () {
-        $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
-                $('.navbar-toggle:visible').click();
-        });
-    }); 
+
+    $('.navbar-collapse ul li a').bind('click', function() {
+        console.log('works');
+        $('.navbar-toggle:visible').click();
+    })
+
+    
+
 });
 
