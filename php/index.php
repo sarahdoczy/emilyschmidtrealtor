@@ -7,8 +7,9 @@
        // set here
        $subject = "Contact form submitted!";
        $to = 'eschmidt@sibcycline.com';
-
-       $body = $message;
+       
+       //$body = $name; $message;
+       $body = "From: $name\r\n <br />\n<br />\n  Message:\r\n $message";
 
        $headers = "From: $email\r\n";
        $headers .= "Content-type: text/html\r\n";

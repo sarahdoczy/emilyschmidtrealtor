@@ -19,7 +19,9 @@ $(function(){
             data:$('.submit-contact-form').serialize(),
             success:function(){
                 $("#messageSent").show();
+                $('#bottom-contactForm').closest('form').find("input[type=text], input[type=email], textarea").val("");
             }
+            
         });
     });
 
@@ -37,7 +39,6 @@ $(function(){
     checkWindowSize();
 
     $('.navbar-collapse ul li a').bind('click', function() {
-        console.log('works');
         $('.navbar-toggle:visible').click();
     })
 
