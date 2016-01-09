@@ -6,7 +6,7 @@
 
        // set here
        $subject = "Contact form submitted!";
-       $to = 'sarahdoczy@gmail.com';
+       $to = 'eschmidt@sibcycline.com';
 
        $body = $message;
 
