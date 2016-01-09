@@ -1,5 +1,9 @@
-*, *:before, *:after {
-  box-sizing: border-box;
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -24,6 +28,10 @@ p {
 }
 a {
 	color: #fff;
+}
+#aboutMe, #myPromise, #contact {
+	position: relative;
+	top: -40px;
 }
 .container {
 	padding-left: 10px;
@@ -65,7 +73,7 @@ li.nav-button {
     padding: 10px 0;
 }
 .navbar-inverse .navbar-toggle {
-	border-color: #282828;
+	border: none;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
 	background-color: #282828;
@@ -106,10 +114,10 @@ li.nav-button {
     padding: 10px 0;
     top: -38px;
 }
-.mobile-nav #search-button, .mobile-nav #contact-button {
+.mobile-nav #search-button, .mobile-nav .contact-button {
 	margin-bottom: 26px;
 }
-.mobile-nav #search-button a, .mobile-nav #contact-button a {
+.mobile-nav #search-button a, .mobile-nav .contact-button a {
 	line-height: 26px;
 }
 .mobile-nav.navbar-collapse {
@@ -141,7 +149,7 @@ li.nav-button {
 	position: relative;
 	text-align: center;	
 }
-#contact-form, #messageSent {
+.contact-form, #messageSent {
 	display: none;
 }
 #messageSent {
@@ -190,28 +198,28 @@ li.nav-button {
 	text-align: center;
 	margin-bottom: 20px;
 }
-#aboutMe, #myPromise  {
+.aboutMe, .myPromise  {
 	color: #37373e;
 }
-#myPromise {
+.myPromise {
 	text-align: center;
 }
 
-#aboutMe .dek, #myPromise .dek {
+.aboutMe .dek, .myPromise .dek {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
     letter-spacing: 1px;
     font-size: 16px;
     color: #565656;
 }
-#aboutMe .dek:last-child {
+.aboutMe .dek:last-child {
     line-height: 34px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 21px;
 }
-#aboutMe h2 {
+.aboutMe h2 {
 	margin-top: -3px;
 	margin-bottom: 8px;
 }
@@ -220,8 +228,8 @@ li.nav-button {
 	font-style: italic;
 	width: 70%;
     margin: 7px auto 13px auto;
-    font-size: 12px !important;
-    line-height: 14px;
+    font-size: 14px !important;
+    line-height: 16px;
     text-align: center;
 }
 .row.aboutMe-dek {
@@ -231,7 +239,7 @@ li.nav-button {
 .featurette-image {
     width: 40%;
 }
-#myPromise {
+.myPromise {
 	background: #F2F2F2;
 	color: #28282e;
 	padding-bottom: 30px;
@@ -285,12 +293,12 @@ p.title {
 	width: 50%;
 	margin: 0 auto;
 }
-#contact {
+.contact {
 	height: auto;
 	background: #373737;
 	padding-bottom: 30px;
 }
-#contact .container {
+.contact .container {
 	text-align: center;
 }
 .social-icon {
@@ -304,7 +312,7 @@ p.title {
 	width: 55px;
     margin-top: 30px;
 }
-#contact .dek {
+.contact .dek {
 	font-size: 14px;
 }
 #bottom-contactForm {
@@ -407,10 +415,10 @@ input[type="submit"] {
 		float: left;
 		margin: -3px 7px 0;
 	}
-	#aboutMe .dek {
+	.aboutMe .dek {
 		font-size: 14px;
 	}
-	#aboutMe h2 {
+	.aboutMe h2 {
 	    margin-top: 23px;
 	}
 	p {
@@ -457,7 +465,7 @@ input[type="submit"] {
 		width: 100%;
 	}
 	.benefits img {
-		width: 60%
+		width: 50%
 	}
 	.home1, .home2, .home3 {
 		background-position: 0 30%;
@@ -474,7 +482,7 @@ input[type="submit"] {
 		background: url('../images/interior_homes/interior_3_sm.jpg') no-repeat;
 		background-size: 100%;
 	}
-	#contact-form {
+	.contact-form {
 	    position: absolute;
 	    display: inline-block;
 	    background: rgba(0,0,0,.6);
@@ -482,24 +490,24 @@ input[type="submit"] {
 	    left: 0;
 	    bottom: -147px;
 	}
-	#contact-form p {
+	.contact-form p {
 		padding-top: 15px;
 		font-family: 'Roboto', sans-serif;
 		font-size: 14px;
 		letter-spacing: 1px;
 	}
-	#contact-form label{
+	.contact-form label{
 		display: block;
 		text-align: left;
 		margin-top: 6px;
 		margin-left: 33px;
 		font-weight: 300;
 	}
-	#contact-form input, #contact-form textarea {
+	.contact-form input, .contact-form textarea {
 		color: #888;
 		width: 68%;
 	}
-	#contact-form input {
+	.contact-form input {
 		margin-top: -2px;
 	}
 	input#submit {
@@ -518,7 +526,7 @@ input[type="submit"] {
 	    padding: 0px 2px;
 	    margin: 25px 0 40px 0;
 	}
-	#contact .container {
+	.contact .container {
 		text-align: left;
 	}
 	.g-recaptcha {
@@ -539,6 +547,9 @@ input[type="submit"] {
 	}
 }
 @media (min-width: 992px) {
+	.navbar-brand p {
+	    font-size: 22px;
+	}
 	.nav>li {
 	    width: auto; 
 	    margin: 0 auto 0 auto;
@@ -577,14 +588,14 @@ input[type="submit"] {
 		background: url('../images/interior_homes/interior_3_xl.jpg') no-repeat;
 		background-size: 100%;
 	}
-	#aboutMe {
+	.aboutMe {
 		padding-top: 30px;
 		padding-bottom: 55px;
 	}
-	#aboutMe .dek {
+	.aboutMe .dek {
 		font-size: 18px;
 	}
-	#aboutMe .dek:last-child {
+	.aboutMe .dek:last-child {
      	margin-top: -11px;
      	margin-bottom: 20px;
 	}
@@ -593,7 +604,7 @@ input[type="submit"] {
 		margin-left: 20px;
 	}
 	.quote {
-		width: 53%;
+		width: 63%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
@@ -604,18 +615,18 @@ input[type="submit"] {
 	.featurette-image {
 		width: 50%; 
 	}
-	#myPromise, #contact {
+	.myPromise, .contact {
 		padding-top: 30px;
 		padding-bottom: 60px;
 	}
-	#myPromise .dek {
+	.myPromise .dek {
 		margin-top: 44px;
     	margin-bottom: 30px;
 	}
 	.promise-dek {
 		margin-top: 14px;
 	}
-	#contact h2 {
+	.contact h2 {
 		margin-bottom: 50px;
 	}
 	.g-recaptcha {
@@ -628,13 +639,15 @@ input[type="submit"] {
 	.home1, .home2, .home3 {
 		background-position: 0 45%;
 	}
-	#aboutMe h3 {
+	.aboutMe h3 {
 	    font-size: 24px;
 	}
-	#aboutMe p {
+	.aboutMe p {
 	    font-size: 18px;
 	}
-
+	.quote {
+		width: 59%;
+	}
 	.featurette-image {
 	    width: 48%;
 	}

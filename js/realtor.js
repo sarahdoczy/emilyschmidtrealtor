@@ -21,7 +21,7 @@ $(function(){
                 $("#messageSent").show();
                 $('#bottom-contactForm').closest('form').find("input[type=text], input[type=email], textarea").val("");
             }
-            
+
         });
     });
 
