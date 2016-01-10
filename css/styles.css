@@ -96,6 +96,7 @@ li.nav-button {
 }
 .navbar-wrapper .navbar {
     border-radius: 0px;
+    border-bottom: 1px solid #ccc;
 }
 .navbar-collapse ul.nav.navbar-nav {
     padding: 10px 0;
